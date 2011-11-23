@@ -2,7 +2,6 @@ require 'rubygems'
 require 'sinatra'
 require 'open-uri'
 require 'json'
-require 'haml'
 require "sinatra/reloader" if development?
 
 key = 'd3f4de77319f37bb'
