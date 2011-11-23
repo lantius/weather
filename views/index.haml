@@ -1,0 +1,13 @@
+%html
+  %head
+    %title temp
+  %body
+    %form{ :action => "", :method => "post"}
+      .question
+        %label{:for => "zipcode"} zip code:
+        %input{:type => "numeric", :name => "zipcode", :class => "text"}
+      .question
+        %label{:for => "date"} date (yyyymmdd):
+        %input{:type => "text", :name => "date", :class => "text"}
+      .question
+        %input{:type => "submit", :value => "submit", :class => "button"}
