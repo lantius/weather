@@ -9,10 +9,6 @@ key = 'd3f4de77319f37bb'
 service = 'http://api.wunderground.com/api/'
 api = '/history_'
 
-get '/favicon.ico' do
-  halt 404
-end
-
 get '/' do
   haml :index
 end
