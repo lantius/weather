@@ -4,7 +4,7 @@ require 'open-uri'
 require 'json'
 require "sinatra/reloader" if development?
 
-key = 'd3f4de77319f37bb'
+key = #apikey
 service = 'http://api.wunderground.com/api/'
 api = '/history_'
 
@@ -12,7 +12,7 @@ get '/' do
   haml :index
 end
 
-#api = http://api.wunderground.com/api/d3f4de77319f37bb/history_20111121/q/98103.json
+#api = http://api.wunderground.com/api/[key]/history_20111121/q/98103.json
 post '/' do
   @zip = params['zipcode']
   @startdate = params['date']
