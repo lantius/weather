@@ -12,7 +12,7 @@ get '/' do
   haml :index
 end
 
-#api = http://api.wunderground.com/api/[key]/history_20111121/q/98103.json
+#api = http://api.wunderground.com/api/[ke]/history_20111121/q/98103.json
 post '/' do
   @zip = params['zipcode']
   @startdate = params['date']
